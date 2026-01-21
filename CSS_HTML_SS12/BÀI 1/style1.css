@@ -1,0 +1,101 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.realer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+    padding: 20px;
+    flex-direction: row;
+}
+
+.list a {
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+h2::before {
+    content: "📖";
+
+}
+
+
+h2 {
+    background: linear-gradient(to right, rgb(142, 44, 233), blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    color: #000;
+}
+
+
+
+.list {
+    flex-wrap: wrap;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.but {
+    padding: 0px;
+    margin: 0px;
+}
+
+.but button {
+    margin: 1;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(0, 119, 255);
+    border: 1px solid rgb(32, 132, 247);
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .realer {
+
+        display: block;
+    }
+
+    .but button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        ;
+
+
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .realer {
+
+        display: block;
+    }
+
+    .but button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        ;
+
+
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+}
